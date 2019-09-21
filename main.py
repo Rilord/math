@@ -1,4 +1,4 @@
-from math import sqrt, pow, abs
+from math import sqrt, pow
 
 ax, ay, bx, by, cx, cy = map(int, input().split())
 
@@ -51,13 +51,14 @@ else:
 
 x, y = map(int, input().split())
 
-if(pow(-1, C1 < 0)(A1 * x + B1 * y + C1 > 0)
-    and pow(-1, C2 < 0)(A2 * x + B2 * y + C2 > 0)
-        and pow(-1, C3 < 0)(A3 * x + B3 * y + C3 > 0)):
+if(int(pow(-1, C1 < 0))*(A1 * x + B1 * y + C1 > 0)
+    and int(pow(-1, C2 < 0))*(A2 * x + B2 * y + C2 > 0)
+        and int(pow(-1, C3 < 0))*(A3 * x + B3 * y + C3 > 0)):
     print("Yup")
     d1 = abs(A1 * x + B1 * y + C1)/sqrt(A1**2 + B1**2)
     d2 = abs(A2 * x + B2 * y + C2)/sqrt(A2**2 + B2**2)
     d3 = abs(A3 * x + B3 * y + C3)/sqrt(A3**2 + B3**2)
+    print(d1, d2, d3)
     if d1 < d2 < d3:
         print(d1)
     elif d2 < d1 < d3:
